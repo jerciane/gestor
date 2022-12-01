@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<title>Bem vindo ao sistema!</title>
+</head>
+<body>
+	<div th:replace="~{menu :: menu}"></div>
+	<div class="container">
+		<h1>
+			<span sec:authentication="principal.nome"></span> Bem vindo ao
+			sistema!
+		</h1>
+	</div>
+	<div>
+	<p>Use o menu acima para navegar.</p>
+	</div>
+</body>
+</html>
